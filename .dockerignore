@@ -1,0 +1,11 @@
+**/.git
+**/.gitignore
+**/Makefile
+**/__pycache__
+**/Dockerfile
+**/*.docker
+**/*-compose.yml
+**/.dockerignore
+**/*.code-workspace
+**/Pipfile
+**/Pipfile.lock

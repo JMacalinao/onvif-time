@@ -1,0 +1,2 @@
+-i https://pypi.org/simple
+python-zeep==0.2.1
