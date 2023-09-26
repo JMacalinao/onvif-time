@@ -1,2 +1,2 @@
 -i https://pypi.org/simple
-python-zeep==0.2.1
+onvif-zeep==0.2.12
