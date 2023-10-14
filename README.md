@@ -6,6 +6,10 @@ _Story time!_ I have a couple of cameras that are almost perfect for my needs. H
 
 So I made this simple script that makes sure the date/time is set correctly on those cameras. Time used to synchronize is based on current system time, so make sure your time is accurate to begin with!
 
+## Prerequisites
+
+You need to configure the script with `config.json` and `secrets.json` files. I have included sample files to get you started.
+
 ## Usage
 
 ### Through the command line
