@@ -20,8 +20,7 @@ TODO
 
 | Variable | Default | Remark |
 |---|---|---|
-| `HOSTS` | None | The hostnames/IPs and ports of the cameras. Each camera is comma separated. IP/host and port are separated by a colon. |
+| `CONFIG_FILE` | config.json | Path to the main config file. Use the sample JSON file for reference. |
+| `SECRETS_FILE` | secrets.json | Path to the secrets config file. Use the sample JSON file for reference. |
 | `INTERVAL` | 60 | The number of seconds to wait in between resetting the date/time. |
 | `POSIX_TZ` | GMT | The timezone in POSIX 1003.1 format. |
-| `USER` | None | Username. Applied to all hosts. |
-| `PASS` | None | Password. Applied to all hosts. |
