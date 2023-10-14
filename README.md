@@ -44,7 +44,7 @@ TODO
 
 | Property | Default | Remark |
 |---|---|---|
-| `defaults` | [] | _Optional._ Default credentials. |
+| `defaults` | {} | _Optional._ Default credentials. |
 | `defaults.username` |  | Username that applies to all cameras (unless overridden by camera username below). |
 | `defaults.username` |  | Password that applies to all cameras (unless overridden by camera password below). |
 | `cameras` | [] | _Optional._ List of credentials specific to cameras. |
