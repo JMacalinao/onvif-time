@@ -2,9 +2,10 @@ import datetime
 import os
 import time
 from onvif import ONVIFCamera
+from zeep.transports import Transport
 
 def set_time(tz: str, host: str, port: int, username: str, password: str):
-    camera = ONVIFCamera(host, port, username, password)
+    camera = ONVIFCamera(host, port, username, password, transport=Transport(operation_timeout=5))
     now = datetime.datetime.utcnow()
 
     params = camera.devicemgmt.create_type('SetSystemDateAndTime')
