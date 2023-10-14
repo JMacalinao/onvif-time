@@ -42,8 +42,12 @@ while True:
         for camera in config['cameras']:
             host = camera['host']
             port = int(camera['port']) if 'port' in camera else None
-            username = secrets['defaults']['username']
-            password = secrets['defaults']['password']
+            username = None
+            password = None
+            if 'defaults' in secrets:
+                defaults = secrets['defaults']
+                username = defaults['username'] if 'username' in defaults else None
+                password = defaults['password'] if 'password' in defaults else None
             camera_secret = next(filter(lambda x: x['name'] == camera['name'], secrets['cameras'])) if 'cameras' in secrets else None
             if camera_secret:
                 username = camera_secret['username']
