@@ -1,0 +1,9 @@
+{
+    "cameras": [
+        {
+            "name": "unique_name",
+            "host": "",
+            "port": "optional"
+        }
+    ]
+}
