@@ -14,7 +14,7 @@ You need to configure the script with `config.json` and `secrets.json` files. I 
 
 ### Through the command line
 
-`python main.py` -- simple as that.
+`python3 main.py` -- simple as that.
 
 ### Docker Compose
 
