@@ -38,10 +38,10 @@ def set_time(tz: str, host: str, port: int, username: str, password: str):
 # Prep vars
 with open(os.getenv('CONFIG_FILE') if 'CONFIG_FILE' in os.environ else 'config.json',
           "r", encoding="utf8") as file:
-    config = json.load(file.read())
+    config = json.load(file)
 with open(os.getenv('SECRETS_FILE') if 'SECRETS_FILE' in os.environ else 'secrets.json',
           "r", encoding="utf8") as file:
-    secrets = json.load(file.read())
+    secrets = json.load(file)
 tz = os.getenv('POSIX_TZ') if 'POSIX_TZ' in os.environ else 'GMT'
 interval = float(os.getenv('INTERVAL')) if 'INTERVAL' in os.environ else 60
 
